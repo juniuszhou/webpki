@@ -47,17 +47,17 @@ extern crate std;
 #[macro_use]
 mod der;
 
-mod calendar;
-mod cert;
-mod error;
-mod name;
-mod signed_data;
-mod time;
+pub mod calendar;
+pub mod cert;
+pub mod error;
+pub mod name;
+pub mod signed_data;
+pub mod time;
 
 #[cfg(feature = "trust_anchor_util")]
 pub mod trust_anchor_util;
 
-mod verify_cert;
+pub mod verify_cert;
 
 pub use error::Error;
 pub use name::{DNSNameRef, InvalidDNSNameError};
